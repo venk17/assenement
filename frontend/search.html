@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Dogs - Search</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>HTTP Dogs</h1>
+        <nav>
+            <a href="search.html">Search</a>
+            <a href="lists.html">My Lists</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="search-container">
+            <input type="text" id="code-filter" placeholder="Filter (e.g., 2xx, 404, 20x)">
+            <button id="search-btn">Search</button>
+            <button id="save-list-btn" disabled>Save List</button>
+            <input type="text" id="list-name" placeholder="List name" disabled>
+        </div>
+        
+        <div id="results-container" class="dog-images">
+            <!-- Results will be populated here -->
+        </div>
+    </main>
+    
+    <script src="js/api.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
