@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Dogs - My Lists</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lists.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1>HTTP Dogs</h1>
+      <ul class="nav-links">
+        <li><a href="search.html">Search</a></li>
+        <li><a href="lists.html" class="active">My Lists</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>My Saved Lists</h2>
+    <div id="lists-container"></div>
+  </div>
+
+  <div id="edit-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Edit List</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="input-group">
+        <label for="edit-list-name">List Name</label>
+        <input type="text" id="edit-list-name">
+      </div>
+      <div id="edit-images-container" class="grid"></div>
+      <button id="update-list-btn" class="btn">Update List</button>
+      <div id="edit-list-error" class="alert alert-error hidden"></div>
+    </div>
+  </div>
+
+  <div id="view-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="view-list-title"></h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div id="view-images-container" class="grid"></div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/lists.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Dogs - Search</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1>HTTP Dogs</h1>
+      <ul class="nav-links">
+        <li><a href="search.html" class="active">Search</a></li>
+        <li><a href="lists.html">My Lists</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="search-header">
+      <input type="text" id="search-input" class="search-input" placeholder="Filter by response code (e.g., 200, 2xx, 20x)">
+      <button id="search-btn" class="search-btn">Search</button>
+    </div>
+
+    <div id="results-container" class="grid"></div>
+
+    <div id="save-list-form" class="save-list-form card hidden">
+      <h3>Save This List</h3>
+      <div class="input-group">
+        <label for="list-name">List Name</label>
+        <input type="text" id="list-name" placeholder="Enter a name for your list">
+      </div>
+      <button id="save-list-btn" class="btn">Save List</button>
+      <div id="save-list-error" class="alert alert-error hidden"></div>
+      <div id="save-list-success" class="alert alert-success hidden"></div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

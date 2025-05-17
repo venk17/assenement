@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Dogs - Login/Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="dog-background">
+    <div class="dog-paws"></div>
+    <div class="auth-container">
+      <div class="dog-header">
+        <img src="https://http.dog/200.jpg" alt="Happy Dog" class="dog-avatar">
+        <h1>Welcome to HTTP Dogs!</h1>
+      </div>
+
+      <div class="auth-tabs">
+        <div class="auth-tab active" id="login-tab">Login</div>
+        <div class="auth-tab" id="signup-tab">Sign Up</div>
+      </div>
+
+      <div id="login-form" class="auth-form">
+        <div class="input-group">
+          <label for="login-email"><i class="dog-icon">🐾</i> Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="login-password"><i class="dog-icon">🔒</i> Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password">
+        </div>
+        <button id="login-btn" class="btn dog-btn">Let Me In!</button>
+        <div id="login-error" class="alert alert-error hidden"></div>
+      </div>
+
+      <div id="signup-form" class="auth-form hidden">
+        <div class="input-group">
+          <label for="signup-name"><i class="dog-icon">🐶</i> Name</label>
+          <input type="text" id="signup-name" placeholder="Enter your name">
+        </div>
+        <div class="input-group">
+          <label for="signup-email"><i class="dog-icon">📧</i> Email</label>
+          <input type="email" id="signup-email" placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="signup-password"><i class="dog-icon">🔑</i> Password</label>
+          <input type="password" id="signup-password" placeholder="Enter your password">
+        </div>
+        <div class="input-group">
+          <label for="signup-confirm-password"><i class="dog-icon">🔏</i> Confirm Password</label>
+          <input type="password" id="signup-confirm-password" placeholder="Confirm your password">
+        </div>
+        <button id="signup-btn" class="btn dog-btn">Join the Pack!</button>
+        <div id="signup-error" class="alert alert-error hidden"></div>
+        <div id="signup-success" class="alert alert-success hidden"></div>
+      </div>
+
+      <div class="dog-footer">
+        <p>Brought to you by the HTTP Dogs team 🐕</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
